@@ -36,7 +36,7 @@ namespace Yammer.OAuthSDK.Utils
                 int redirectUriIndex = decodedUri.IndexOf(redirectUri);
                 string redirectParams = new Uri (decodedUri.Substring(redirectUriIndex)).Query;
                 // Map the OAuth response to the app page
-                return new Uri("/authentication.xaml" + redirectParams, UriKind.Relative);
+                return new Uri("/View/authentication.xaml" + redirectParams, UriKind.Relative);
             }
 
             // Otherwise perform normal launch.
